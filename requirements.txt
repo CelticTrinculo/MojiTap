@@ -1,0 +1,11 @@
+PyQt6>=6.11.0
+emoji>=2.15.0
+pynput>=1.8.2
+pyperclip>=1.11.0
+requests>=2.34.2
+Pillow>=12.2.0
+# macOS: NSEvent-based global hotkeys (avoids pynput TSM thread-safety crash on macOS 15+)
+# Also used for frontmost-app detection in output_manager
+# Note: This was only here because I started the project on macOS,
+#       But I intended to make it only for Linux, so I guess I'll just keep it here for now.
+pyobjc-framework-Cocoa>=12.2; sys_platform == "darwin"
